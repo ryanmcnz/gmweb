@@ -1,4 +1,4 @@
-# GameMaker + Chromium extension (via Awesomium)
+# GMWeb: GameMaker + Chromium extension (via Awesomium)
 
 GMWeb is an extension for GameMaker Studio that enables displaying and interacting with web content on surfaces in-game:
 
