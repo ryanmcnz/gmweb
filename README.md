@@ -21,6 +21,7 @@ This is open to pull requests.
 This is a free proof-of-concept project and is provided unfinished, as-is. GMWeb is not commercial, is created solely for fun and is not affiliated with Awesomium or Chromium. If you use this extension in your game, please make sure you follow the licenses for both Awesomium and Chromium!
 
 **Donations:**
+
 If you found this code useful, consider chucking some $$ at us via PayPal!
 - ryanmc.nz@gmail.com (GML, UI demos)
 - LiamKarlMitchell@gmail.com (engineering, god-like C++ for DLL)
