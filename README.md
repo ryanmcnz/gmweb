@@ -6,6 +6,10 @@ GMWeb is an extension for GameMaker Studio that enables displaying and interacti
 
 This is achieved via integration of Awesomium, which contains Chromium.. allowing for HTML/CSS/JS game UI's along the lines of what can be achieved in WebKit.
 
+![](https://raw.githubusercontent.com/ryanmcnz/gmweb/master/screenshot1.jpg)
+![](https://raw.githubusercontent.com/ryanmcnz/gmweb/master/screenshot2.jpg)
+![](https://raw.githubusercontent.com/ryanmcnz/gmweb/master/screenshot3.jpg)
+
 *NOTE:* This project is very unfinished. Bugs will exist, and wrapping of Awesomium is still a bit glitchy (especially in fullscreen support). Features such as support for special keys during input are currently lacking.. and the version of Chromium in Awesomium is also very outdated.
 This means that quite a few APIs are missing from it, eg. gamepad support (but of course you can still achieve this anyway via handling it in GameMaker with extensions such as the brilliant "InputDog" by Messhof LLC.
 
