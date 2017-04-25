@@ -1,0 +1,44 @@
+<html>
+<!--    <meta http-equiv="refresh" content="2">-->
+<body gmwebDemo>
+<style>
+
+    #helpful{
+        margin-top:32px; margin-left:16px;
+    }
+
+</style>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+
+<button id="demo_back"></button>
+    
+<div class="demo_container">
+    <h2>Events Demo</h2>
+    <div class="section_left">
+        <h3>Chromium</h3>
+        <button id="ball_spawner" class="wide">Spawn Bouncy Ball</button>
+        <div class="middle">
+            <div class="event_right"></div>
+            <div class="event_left"></div>
+        </div>
+        <div id="from_gm_out" class="scrollable">
+            <p>Events are logged here.</p>
+        </div>
+        <strong class="left">Click the button to send an event from Chromium to GameMaker.</strong>
+    </div>
+    <div class="section_right">
+        <h3>GameMaker</h3>
+        <div class="ball_area"></div>
+        <strong>Click a ball to send an event from GameMaker to Chromium.</strong>
+    </div>
+</div>
+
+    
+<script src="js/lib/jquery-1.12.4.min.js"></script>
+<script src="js/lib/cufon-yui.js"></script>
+<script src="js/lib/Vegur.font.js"></script>
+<script src="js/lib/lowLag.js"></script>
+<script src="js/base.js"></script>
+<script src="js/allDemos.js"></script>
+</body>
+</html>

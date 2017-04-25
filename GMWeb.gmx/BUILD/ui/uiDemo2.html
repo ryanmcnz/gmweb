@@ -1,0 +1,54 @@
+<html>
+<!--    <meta http-equiv="refresh" content="2">-->
+<body gmwebDemo>
+<style>
+
+    #helpful{
+        margin-top:32px; margin-left:16px;
+    }
+
+</style>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+
+<button id="demo_back"></button>
+    
+<div class="demo_container">
+    <h2>Web Components Demo</h2>
+    <div class="section_left">
+        <h3>Controls</h3>
+        <input type="text" value="This is a single-line textbox"/><br>
+        <textarea spellcheck="false">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hic nihil fuit, quod quaereremus. Quia dolori non voluptas contraria est, sed doloris privatio. Hoc etsi multimodis reprehendi potest, tamen accipio, quod dant. Quod quidem iam fit etiam in Academia.</textarea><br>
+        <button>Click Me</button>
+        <div class="right">
+            <input type="radio" name="radios" checked />
+            <input type="radio" name="radios" />
+            <input type="checkbox" checked />
+        </div>
+        <select size=3>
+            <option>Select Me</option>
+            <option>Select Me</option>
+            <option>Select Me</option>
+        </select>
+        <div class="right">
+            <input type="range" min="0" max="5" steps="5" value="1" />
+        </div>
+    </div>
+    <div class="section_right">
+        <h3>Media</h3>
+        <video width="360" height="203" controls preload>
+            <source src="media/cutscene.webm" type="video/webm">
+        </video><br>
+        <audio controls preload><source src="media/drum_loop.ogg" type="audio/ogg"></audio><br>
+        <strong id="helpful">Easily build a game UI using web controls and CSS, no re-inventing the wheel!</strong>
+    </div>
+</div>
+
+    
+<script src="js/lib/jquery-1.12.4.min.js"></script>
+<script src="js/lib/cufon-yui.js"></script>
+<script src="js/lib/Vegur.font.js"></script>
+<script src="js/lib/lowLag.js"></script>
+<script src="js/base.js"></script>
+<script src="js/allDemos.js"></script>
+</body>
+</html>

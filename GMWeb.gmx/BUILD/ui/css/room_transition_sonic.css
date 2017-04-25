@@ -1,0 +1,130 @@
+/* CSS room transition (sonic style) */
+#room_transition{
+	width:1280px; height:0px;
+	position:absolute; top:0px;left:0px;
+	display:none;
+	overflow:hidden;
+	z-index:5;
+}
+#room_transition .blue{
+	width:1280px; height:720px;
+	position:absolute;
+	left:0px;top:0px;
+
+	background:
+		url(zig_zag_blue.png) 1000px 0px repeat-y
+		,-webkit-linear-gradient(left
+      		,#004caa 0px,	#004caa 1020px
+      		,#003b99 1020px,#003b99 100%
+    	)
+	;
+	z-index:10;
+}
+#room_transition .yellow{
+	background:#fdef00 url(zig_zag_yellow.png) 0 100px repeat-x;
+	width:1280px; height:230px;
+	position:absolute; left:100%; top:490px;
+	z-index:20;
+}
+#room_transition .red{
+	background:
+		url(zig_zag_red2.png) 100% 0 repeat-y
+		,url(zig_zag_red1.png) 230px 0 repeat-y
+		,-webkit-linear-gradient(left
+      		,#bd200b 0px,	#bd200b 232px
+      		,#dd230b 232px,#dd230b 506px
+      		,transparent 506px
+    	)
+	;
+	width:530px; height:720px;
+	position:absolute; left:-530px; top:0px;
+	z-index:30;
+}
+
+#room_title{
+	z-index:40;
+	position:absolute;
+	left:0px;top:200px;
+	width:1280px; height:160px;
+	font-size:72px;
+	display:none;
+}
+#room_title .txt{
+	width:680px; height:80px; line-height:100px;
+	position:absolute;
+	color:#ccc;
+	left:30%;
+}
+#room_title .lead{
+	top:0px;
+    font-size:66px;
+}
+#room_title .sub{
+	bottom:0px;
+	font-size:60px;text-align:right;
+}
+
+#room_title.animating{
+	display:block;
+}
+
+#room_title.animating .lead{
+    -webkit-animation: transition_sonic_txt_lead 3s linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes transition_sonic_txt_lead {
+    0%   {margin-left:900px;}
+    6%  {margin-left:900px;}
+    13%  {margin-left:0px;}
+    90%  {margin-left:-40px;}
+    97% {margin-left:-1070px;}
+    100% {margin-left:-1070px;}
+}
+
+#room_title.animating .sub{
+    -webkit-animation: transition_sonic_txt_sub 3s linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes transition_sonic_txt_sub {
+    0%   {margin-left:-1070px;}
+    6%  {margin-left:-1070px;}
+    13%  {margin-left:0px;}
+    90%  {margin-left:40px;}
+    97% {margin-left:900px;}
+    100% {margin-left:900px;}
+}
+
+#room_transition.animating{
+	display:inline-block; height:720px;
+    -webkit-animation: transition_sonic_slidedown 3s linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes transition_sonic_slidedown {
+    0%   {height: 0px;}
+    11% {height: 720px;}
+    62% {height: 720px;}
+    69% {height: 0px;}
+    100% {height: 0px;}
+}
+
+#room_transition.animating .yellow{
+	left:0px;
+    -webkit-animation: transition_sonic_slideleft 0.7s linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes transition_sonic_slideleft {
+    0%   {left: 100%;}
+    56%  {left: 100%;}
+    100% {left: 0px;}
+}
+
+#room_transition.animating .red{
+	left:0px;
+    -webkit-animation: transition_sonic_slideright 0.8s linear;
+    animation-fill-mode: forwards;
+}
+@-webkit-keyframes transition_sonic_slideright {
+    0%   {left: -530px;}
+    76%  {left: -530px;}
+    100% {left: 0px;}
+}

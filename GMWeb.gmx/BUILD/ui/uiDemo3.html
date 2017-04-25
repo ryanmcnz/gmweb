@@ -1,0 +1,49 @@
+<html>
+<!--    <meta http-equiv="refresh" content="2">-->
+<body gmwebDemo>
+<style>
+
+    #helpful{
+        margin-top:32px; margin-left:16px;
+    }
+
+</style>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+
+<div id="under_construction"></div>
+
+<button id="demo_back"></button>
+    
+<div class="demo_container">
+    <h2>Hud Demo</h2>
+    <div class="section_left">
+        <h3>Item Shop</h3>
+        <dialog buySell>
+            <ul items>
+                <li ammo><desc>Ammo x 1</desc><price>$3</price><button buy>Buy</button><button sell>Sell</button></li>
+                <li ammo><desc>Ammo x 3</desc><price>$5</price><button buy>Buy</button><button sell>Sell</button></li>
+                <li life><desc>Life x 1</desc><price>$5</price><button buy>Buy</button><button sell>Sell</button></li>
+                <li life><desc>Life x 3</desc><price>$9</price><button buy>Buy</button><button sell>Sell</button></li>
+            </ul>
+            <button class="sticky bottom">Leave Shop</button>
+        </dialog>
+    </div>
+    <div class="section_right">
+        <div id="shop_opener"><button>Visit Shop</button></div>
+    </div>
+    <hud class="bottom">
+        <span gun>5</span>
+        <span life>3</span>
+        <span money>12</span>
+    </hud>
+</div>
+
+    
+<script src="js/lib/jquery-1.12.4.min.js"></script>
+<script src="js/lib/cufon-yui.js"></script>
+<script src="js/lib/Vegur.font.js"></script>
+<script src="js/lib/lowLag.js"></script>
+<script src="js/base.js"></script>
+<script src="js/allDemos.js"></script>
+</body>
+</html>

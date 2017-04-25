@@ -1,0 +1,64 @@
+<!--
+	This file handles the initial loading screen and main menu of the web demos
+-->
+
+<html>
+<!-- <meta http-equiv="refresh" content="2"> -->
+<body>
+<style>
+/* CSS specific to the Main Menu */
+#main_menu button:hover:before{
+	content:"";
+	width:37px; height:52px;
+	background: url(css/arrow-orange.png) 0 0 no-repeat;
+	position:absolute;left:-30px;top:-2px;
+}
+
+*{
+	user-select:none !important;
+	-webkit-user-select:none !important;
+}
+
+</style>
+<link href="css/base.css" rel="stylesheet" type="text/css">
+<link href="css/uiMainMenu.css" rel="stylesheet" type="text/css">
+<link href="css/room_transition_sonic.css" rel="stylesheet" type="text/css">
+    
+<script src="js/lib/jquery-1.12.4.min.js"></script>
+<script src="js/lib/cufon-yui.js"></script>
+<script src="js/lib/Vegur.font.js"></script>
+<script src="js/lib/lowLag.js"></script>
+<script src="js/base.js"></script>
+<script src="js/uiMainMenu.js"></script>
+
+<div id="main_menu">
+	<div class="title">GMWeb</div>
+	<div class="sub_title">GameMaker + Chromium</div>
+	<div class="button_container">
+		<button desc="Sync and async events in JS"><b>Events Demo</b></button>
+		<button desc="Web components including forms, audio and video"><b>Web Components Demo</b></button>
+		<button desc="A hud and item shop menu using HTML/CSS/JS"><b>Hud Demo (TODO)</b></button>
+		<button desc="Keys/mouse/gamepad single/multi input via InputDog extension"><b>Input Demo (TODO)</b></button>
+        <button desc="Game sprites displayed above and below the browser"><b>Surface Demo</b></button>
+	</div>
+</div>
+
+<div id="main_menu_desc"></div>
+
+<div id="room_title">
+	<div class="txt lead">CSS Room Transition</div>
+	<div class="txt sub">Pretty cool huh?</div>
+</div>
+
+<div id="room_transition">
+	<div class="red"></div>
+	<div class="yellow"></div>
+	<div class="blue"></div>
+</div>
+
+<!--
+<iframe id="bgm_youtube" type="text/html" width="1" height="1" style="opacity:0; position:absolute;" src="http://www.youtube.com/embed/4HuPUxRN-g4?html5=1&rel=0&autohide=1&showinfo=0&loop=1&autoplay=1&playlist=4HuPUxRN-g4" frameborder="0" allowfullscreen="0"></iframe>
+-->
+    
+</body>
+</html>
