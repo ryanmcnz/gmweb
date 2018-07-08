@@ -1,31 +1,25 @@
-# GMWeb: GameMaker + Chromium extension
+# GMWeb - Awesomium extension for GameMaker
 
-GMWeb is an extension for GameMaker Studio that enables displaying and interacting with web content on surfaces in-game:
-
-[Watch trailer demonstrating GMWeb](https://www.youtube.com/watch?v=_8F5KYy15b4)
-
-This is achieved via integration of Awesomium, which contains Chromium.. allowing for HTML/CSS/JS game UI's along the lines of what can be achieved in WebKit.
+GMWeb is an extension for GameMaker Studio that enables displaying and interacting with webpages in games.
 
 ![](https://raw.githubusercontent.com/ryanmcnz/gmweb/master/screenshot1.jpg)
 ![](https://raw.githubusercontent.com/ryanmcnz/gmweb/master/screenshot2.jpg)
 ![](https://raw.githubusercontent.com/ryanmcnz/gmweb/master/screenshot3.jpg)
 
-*NOTE:* This project is very unfinished. Bugs will exist, and wrapping of Awesomium is still a bit glitchy (especially in fullscreen support). Features such as support for special keys during input are currently lacking.. and the version of Chromium in Awesomium is also very outdated.
-This means that quite a few APIs are missing from it, eg. gamepad support (but of course you can still achieve this anyway via handling it in GameMaker with extensions such as the brilliant "InputDog" by Messhof LLC.
+**Features included:**
+- Uses the Awesomium framework to integrate the Chromium web browser.
+- Handles rendering and user input.
+- Renders the webpage to a surface (including the ability to render game content in-front of/behind the surface).
+- Includes an example project with multiple demos of how to use GMWeb.
 
-This is open to pull requests.
+*NOTE:* This project is incomplete. Bugs will exist. The version of Chromium used for this extension is outdated.
 
-**Credits:**
-- Awesomium belongs to Adam Simmons
-- Chromium belongs to Google
-- A big thanks to [Liam](https://github.com/LiamKarlMitchell) for developing the GMWeb DLL in C++, as well as figuring out how to generate that pesky GM extension XML.
+**Features not included:**
+- Fullscreen support (this is partially implemented).
+- Handling of special keys during user input.
+- Support for newer versions of Chromium (including Webkit APIs such as gamepad support).
 
 **Disclaimer:**
-
-This is a free proof-of-concept project and is provided unfinished, as-is. GMWeb is not commercial, is created solely for fun and is not affiliated with Awesomium or Chromium. If you use this extension in your game, please make sure you follow the licenses for both Awesomium and Chromium!
-
-**Donations:**
-
-If you found this code useful, consider chucking some $$ at us via PayPal!
-- ryanmc.nz@gmail.com (GML, UI demos)
-- LiamKarlMitchell@gmail.com (engineering, god-like C++ for DLL)
+- GMWeb is not affiliated with Awesomium or Chromium.
+- Awesomium belongs to Adam Simmons.
+- Chromium belongs to Google.
