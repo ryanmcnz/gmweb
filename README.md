@@ -9,8 +9,9 @@ GMWeb is an extension for GameMaker Studio that enables displaying and interacti
 **Features included:**
 - Uses the Awesomium framework to integrate the Chromium web browser.
 - Handles rendering and user input.
+- Allows sending events back and forth between GameMaker and Awesomium.
 - Renders the webpage to a surface (including the ability to render game content in-front of/behind the surface).
-- Includes an example project with multiple demos of how to use GMWeb.
+- Includes an example project with multiple demos of how to use the extension.
 
 *NOTE:* This project is incomplete. Bugs will exist. The version of Chromium used for this extension is outdated.
 
